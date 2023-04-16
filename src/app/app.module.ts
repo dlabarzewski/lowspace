@@ -16,7 +16,7 @@ import { HomepageComponentModule } from './components/homepage/homepage.componen
     RouterModule,
     HomepageComponentModule
   ],
-  providers: [],
+  providers: [{provide: Storage, useValue: localStorage}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
