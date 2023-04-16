@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PersonModel } from './models/person.model';
+import { HrService } from './services/hr.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lowspace';
+ 
 }
