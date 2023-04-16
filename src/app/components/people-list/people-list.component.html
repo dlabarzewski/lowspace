@@ -22,3 +22,12 @@
     </tr>
   </tbody>
 </table>
+<form [formGroup]="form" (ngSubmit)="onFormSubmitted(form)">
+  <input type="text" formControlName="mesel" placeholder="Mesel">
+  <input type="text" formControlName="firstname" placeholder="Firstname">
+  <input type="text" formControlName="lastname" placeholder="Lastname">
+  <input type="date" formControlName="arrivalDate" placeholder="Arrival Date">
+  <input type="date" formControlName="birthday" placeholder="Birthday">
+  <input type="number" formControlName="roleId" placeholder="Role Id">
+  <input type="submit" value="Submit">
+</form>
